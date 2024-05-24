@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1tr));
+            grid-gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .item-grid {
+            background-color: teal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;"> Grid</h1>
+    <p>Para utilizar Grid CSS necesitaremos tener en cuenta una serie de conceptos que utilizaremos a partir de ahora y
+        que definiremos a continuación
+    </p>
+    <h5>Propiedades de grid</h5>
+    <ul>
+        <li>Contenedor: Existe un elemento padre que es el contenedor que definirá la cuadrícula o rejilla</li>
+        <li>Ítem: Cada uno de los hijos que contiene la cuadrícula (elemento contenedor).
+        </li>
+        <li>Celda (grid cell): Cada uno de los cuadritos (unidad mínima) de la cuadrícula.
+        </li>
+        <li>Área (grid area): Región o conjunto de celdas de la cuadrícula.
+        </li>
+        <li>Banda (grid track): Banda horizontal o vertical de celdas de la cuadrícula.
+        </li>
+        <li>Línea (grid line): Separador horizontal o vertical de las celdas de la cuadrícula</li>
+    </ul>
+
+    <h1>Fila y columans repetitivas</h1>
+    <p>En las propiedades grid-template-columns y grid-template-rows podemos indicar expresiones de repetición,
+        indicando celdas que repiten un mismo patrón de celdas varias veces. La expresión a utilizar sería la siguiente:
+        repeat([núm de veces], [valor o valores]). Veamos un ejemplo:</p>
+    <div class="grid">
+        <div class="item-grid">1</div>
+        <div class="item-grid">2</div>
+        <div class="item-grid">3</div>
+        <div class="item-grid">4</div>
+    </div>
+
+    <h1>Grid por areas</h1>
+
+
+</body>
+
+</html>
